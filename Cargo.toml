@@ -54,4 +54,5 @@ pallet-aura = { git = 'https://github.com/paritytech/substrate.git',  tag = 'mon
 frame-system-rpc-runtime-api = { git = 'https://github.com/paritytech/substrate.git',  tag = 'monthly-2021-07' }
 frame-system-benchmarking = { git = 'https://github.com/paritytech/substrate.git',  tag = 'monthly-2021-07' }
 frame-executive = { git = 'https://github.com/paritytech/substrate.git',  tag = 'monthly-2021-07' }
+pallet-nicks = { git = 'https://github.com/paritytech/substrate.git',  tag = 'monthly-2021-07' }
 

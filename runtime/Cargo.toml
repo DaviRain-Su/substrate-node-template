@@ -40,6 +40,7 @@ pallet-randomness-collective-flip = { version = "3.0.0", default-features = fals
 pallet-grandpa = { version = "3.1.0", default-features = false }
 pallet-balances = { version = "3.0.0", default-features = false }
 pallet-aura = { version = "3.0.0", default-features = false }
+pallet-nicks = { version = "3.0.0", default-features = false }
 
 # you pallet
 pallet-template = { version = "3.0.0", default-features = false, path = "../pallets/template" }
@@ -88,4 +89,5 @@ std = [
     'sp-std/std',
     'sp-transaction-pool/std',
     'sp-version/std',
+    'pallet-nicks/std',
 ]
