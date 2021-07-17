@@ -41,8 +41,10 @@ pallet-grandpa = { version = "3.1.0", default-features = false }
 pallet-balances = { version = "3.0.0", default-features = false }
 pallet-aura = { version = "3.0.0", default-features = false }
 
-# you pallet
+# you pallet-template
 pallet-template = { version = "3.0.0", default-features = false, path = "../pallets/template" }
+# Add pallet-poe
+pallet-poe = { version = "0.1.0", default-features = false, path = "../pallets/poe" }
 
 [build-dependencies.substrate-wasm-builder]
 git = 'https://github.com/paritytech/substrate.git'
