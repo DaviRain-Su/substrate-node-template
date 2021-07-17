@@ -1,0 +1,38 @@
+[package]
+authors = ['davirain.yin@gmail.com']
+description = 'Proof of Existence is an online service that verifies the existence of computer files as of a specific time via timestamped transactions in the bitcoin blockchain.'
+edition = '2018'
+#homepage = ''
+license = 'Unlicense'
+name = 'pallet-poe'
+readme = 'README.md'
+#repository = ''
+version = '0.1.0'
+
+[package.metadata.docs.rs]
+targets = ['x86_64-unknown-linux-gnu']
+
+[dependencies]
+codec = { package = "parity-scale-codec", version = "2.0.0", default-features = false, features = ['derive'] }
+frame-benchmarking = { version = "3.1.0", default-features = false, optional = true }
+frame-support = { version = "3.0.0", default-features = false }
+frame-system = { version = "3.0.0", default-features = false }
+sp-std = { version = "3.0.0", default-featuers = false }
+
+[dev-dependencies]
+serde = '1.0.119'
+sp-core = { version = "3.0.0", default-features = false }
+sp-io = { version = "3.0.0", default-features = false }
+sp-runtime = { version = "3.0.0", default-features = false }
+
+[features]
+default = ['std']
+runtime-benchmarks = ['frame-benchmarking']
+std = [
+    'codec/std',
+    'frame-support/std',
+    'frame-system/std',
+    'frame-benchmarking/std',
+    'sp-std/std',
+]
+try-runtime = ['frame-support/try-runtime']
